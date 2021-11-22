@@ -1,0 +1,162 @@
+
+:root {
+    /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /* Neutral */
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: "Poppins";
+    background-color: hsl(0, 0%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    max-width: 70%;
+}
+
+.text-container {
+    text-align: center;
+    margin: 0.5em 1em;
+}
+
+.square-container {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 1em;
+}
+
+.side-square, .center-square {
+    width: 100%;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 1em;
+    margin: 2em 1em;
+    height: 30vh;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#square1 {
+    border-top: 5px solid var(--cyan);
+}
+
+#square2 {
+    border-top: 5px solid var(--red);
+}
+
+#square3 {
+    border-top: 5px solid var(--orange);
+}
+
+#square4 {
+    border-top: 5px solid var(--blue);
+}
+
+.square img {
+    max-width: 20%;
+}
+
+.image-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    color: var(--gray-blue);
+    font-size: 13px;
+    margin-top: 0.5em;
+}
+
+h1 {
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 16px;
+    color: hsl(234, 12%, 34%);
+}
+
+@media only screen and (max-width: 425px) {
+    .square-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5em 1em;
+    }
+    main {
+       max-width: 80%;
+    }
+
+    .square {
+        margin: 12px auto;
+    }
+    h1 {
+        width: 100%;
+    }
+
+    .text-container {
+        text-align: center;
+        margin: 2em auto;
+        width: 100%;
+    }
+    .center-square {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+    main {
+        min-width: 90%;
+    }
+    .square {
+        padding: 1em 1em;
+        margin: 2em 0.5em;
+        height: 35vh;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+}
+
+@media only screen and (max-width: 481px) {
+    main {
+        min-width: 90%;
+    }
+    .square {
+        padding: 1em 1em;
+        margin: 2em 0.5em;
+        height: 40vh;
+    }
+}
